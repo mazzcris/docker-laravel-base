@@ -1,0 +1,7 @@
+CREATE DATABASE IF NOT EXISTS `laravel_base`;
+CREATE DATABASE IF NOT EXISTS `laravel_base_test`;
+
+FLUSH PRIVILEGES;
+
+CREATE USER 'laravel'@'127.0.0.1:3306';
+GRANT ALL PRIVILEGES ON *.* TO 'laravel'@'%';
