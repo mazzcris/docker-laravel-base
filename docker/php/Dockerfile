@@ -13,6 +13,6 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 ENV PATH="~/.composer/vendor/bin:${PATH}"
 
-RUN composer require "laravel/installer"
+RUN composer global require "laravel/installer"
 
 RUN composer --version
